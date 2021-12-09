@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    background-image:
+    linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(50, 56, 65, 0.3)),
+    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-06.jpg);
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+    display: block;
+    position: relative;
+}
+.banner-text{
+    color: #ffffff;
+    font-size: 35px;
+    position:absolute;
+    bottom: 30px;
+    left: 120px;
+}
+.intro{
+    display: flex;
+    width: 80%;
+    letter-spacing: 1px;
+    margin: 70px 0;
+}
+.intro-left{
+    box-sizing: border-box;
+    padding:0 40px 0 15px;
+    font-size: 40px;
+    flex-basis: 50%;
+    text-align: right;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-indent: 30px;
+    color: #555555;
+}
+.intro-right{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    font-weight: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #8d8d8d;
+    font-family: sans-serif;
+}
+.intro-right-col{
+    box-sizing: border-box;
+    padding: 0 15px;
+    line-height: 27px;
+    font-size: 15px;
+}
+.video{
+    margin-bottom: 50px;
+}
+.banner-staff{
+    background: linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(135, 151, 175, 0.3)),
+    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center top/cover fixed;
+    width: 100%;
+    height: 555px;
+    background-position: center;
+    background-size: cover;
+}
+.section {
+    transition: transform 0.7s, opacity 0.7s;
+}
