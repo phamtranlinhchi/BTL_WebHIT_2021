@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 .banner{
     background-image:
@@ -52,7 +53,6 @@ body{
     font-size: 14px;
     line-height: 27px;
     color: #8d8d8d;
-    font-family: sans-serif;
 }
 .intro-right-col{
     box-sizing: border-box;
@@ -64,13 +64,113 @@ body{
     margin-bottom: 50px;
 }
 .banner-staff{
-    background: linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(135, 151, 175, 0.3)),
-    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center top/cover fixed;
+    background: linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(37, 41, 48, 0.3)),
+    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center/cover fixed;
     width: 100%;
     height: 555px;
-    background-position: center;
-    background-size: cover;
+    position: relative;
 }
-.section {
-    transition: transform 0.7s, opacity 0.7s;
+.banner-staff-text{
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+    text-align: center;
 }
+.banner-staff-text-header{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.banner-staff-text-container{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+    margin: 30px 0;
+}
+.banner-staff-text-btn{
+    border-radius: 30px;
+    line-height: 16px;
+    font-size: 16px;
+    background-color: #f3a46b;
+    padding: 15px 25px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: color .5s;
+}
+.banner-staff-text-btn:hover{
+    color: rgb(216, 214, 214);
+}
+.staff{
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.staff-info{
+    width: 23%;
+}
+.staff-img{
+    width: 100%;
+}
+.staff-info-detail{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.staff-name{
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;  
+    letter-spacing: 1px;
+}
+.staff-pos{
+    color: #9a9a9a;
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: lighter;
+}
+.staff-quote{
+    color: #9a9a9a;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+.staff-contact{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    display: inline-block;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color .5s;
+}
+.staff-contact:hover{
+    color: #fff;
+    background: #f3a46b;
+
+}
+
+
