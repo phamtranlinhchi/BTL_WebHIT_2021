@@ -10,7 +10,7 @@ a{
     text-decoration: none;
 }
 
-/* Banner */
+/* BANNER */
 .banner{
     background-image:
     linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(50, 56, 65, 0.3)),
@@ -31,7 +31,7 @@ a{
     left: 120px;
 }
 
-/* Introduce */
+/* INTRODUCE */
 .intro{
     display: flex;
     width: 80%;
@@ -68,12 +68,12 @@ a{
     font-size: 15px;
 }
 
-/* Video */
+/* VIDEO */
 .video{
     margin-bottom: 50px;
 }
 
-/* Staff */
+/* STAFF */
 .banner-staff{
     background: linear-gradient(0,rgba(155, 143, 124, 0.3),rgba(37, 41, 48, 0.3)),
     url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center/cover fixed;
@@ -116,22 +116,22 @@ a{
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    transition: color .5s;
+    transition: color .2s;
 }
 .banner-staff-text-btn:hover{
     color: rgb(216, 214, 214);
 }
 .staff{
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: 82%;
-    left: 10%;
+    left: 5%;
 }
 .staff-info{
-    width: 23.5%;
+    width: 260px;
 }
 .staff-img{
     width: 100%;
@@ -183,7 +183,7 @@ a{
 
 }
 
-/* Destinations */
+/* DESTINATIONS */
 .destinations{
     width: 80%;
     margin-top: 470px;
@@ -273,7 +273,7 @@ u::after{
     color: #fff
 }
 
-/* Status */
+/* STATUS */
 .status{
     display: flex;
     width: 100%;
@@ -299,7 +299,7 @@ u::after{
 }
 
 
-/* Fixed */
+/* FIXED */
 .buy{
     position: fixed;
     right: 30px;
@@ -356,4 +356,50 @@ u::after{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1000px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-left{
+        text-align: center;
+    }
+    .intro-right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-staff-text{
+        left: 27%;
+        width: 50%;
+    }
+    .staff{
+        display: none;
+    }
+    .destinations{
+        margin-top: 20px;
+    }
+    .des-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .des-container-col{
+        width: 90%;
+    }
+    .status{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 100px;
+    }
+    .buy{
+        display: none;
+    }
+    .leaf{
+        display: none;
+    }
 }
