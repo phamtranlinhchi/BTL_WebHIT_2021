@@ -64,7 +64,7 @@ body{
     margin-bottom: 50px;
 }
 .banner-staff{
-    background: linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(37, 41, 48, 0.3)),
+    background: linear-gradient(0,rgba(155, 143, 124, 0.3),rgba(37, 41, 48, 0.3)),
     url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center/cover fixed;
     width: 100%;
     height: 555px;
@@ -74,7 +74,7 @@ body{
     box-sizing: border-box;
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 18%;
     width: 40%;
     text-align: center;
 }
@@ -116,11 +116,11 @@ body{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 10%;
 }
 .staff-info{
-    width: 23%;
+    width: 23.5%;
 }
 .staff-img{
     width: 100%;
@@ -164,13 +164,127 @@ body{
     display: inline-block;
     color: #9a9a9a;
     letter-spacing: 1px;
-    position: relative;
-    transition: color .5s;
+    transition: color .3s;
 }
 .staff-contact:hover{
     color: #fff;
     background: #f3a46b;
 
 }
+.destinations{
+    width: 80%;
+    margin-top: 470px;
+    margin-bottom: 70px;
+}
+.des-header{
+    text-align: center;
+}
+.des-header-1{
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.des-header-2{
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'Poppins', sans-serif;
+}
 
-
+u{
+    z-index: 99;
+    text-decoration: none;
+    position: relative;
+}
+u::after{
+    background-color: #f3a46b;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 11px;
+    z-index: -1;
+}
+.des-container{
+    display: flex;
+    width: 100%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.one-hour{
+    background-color: #fff !important; 
+    color: #aaa9a9 !important; 
+    border: 1px solid #e7e6e6;
+}
+.des-container-col{
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 50%;
+}
+.des-container-section{
+    width: 100%;
+}
+.des-container-row-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    color: #555555;
+    margin-top: 30px;
+    height: 17px;
+    position: relative;
+    border-bottom: 2px dotted #f1f1f1;
+}
+.des-container-row-1-left:hover, .des-container-row-1-right:hover{
+    cursor: pointer;
+}
+.des-container-row-2{
+    display: flex;
+    justify-content: space-between;
+    color: #9a9a9a;
+    margin-top: 10px;
+    align-items: center;
+}
+.des-container-row-2-right{
+    background-color: #f3a46b;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff
+}
+.status{
+    display: flex;
+    width: 100%;
+    height: 370px;
+    background: linear-gradient(0,rgba(219, 203, 177, 0.3),rgba(94, 104, 121, 0.3)),
+    url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/p-10.jpg") no-repeat center/cover fixed;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.status-detail{
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+.status-detail-num{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.status-detail-name{
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.buy{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: #ffffff;
+}
