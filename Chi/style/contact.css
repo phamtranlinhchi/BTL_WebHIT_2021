@@ -53,7 +53,7 @@ a{
     color: #9a9a9a;
     font-size: 16px;
     line-height: 36px;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 /* FORM */
@@ -62,7 +62,7 @@ form{
     font-size: 14px;
 }
 label{
-    font-size: 18px;
+    font-size: 15px;
 }
 input[type="text"]{
     width: 100%;
@@ -74,7 +74,7 @@ input[type="text"]{
     border: 1px solid #f1f1f1;
     box-sizing: border-box;
     font-size: 15px;
-    height: 45px;
+    height: 44px;
 }
 textarea{
     width: 100%;
@@ -201,4 +201,29 @@ textarea{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .container-left, .container-right{
+        width: 80%;
+    }
+    .map{
+        margin-top: 20px;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .detail-col{
+        width: 100%;
+    }
 }
