@@ -144,3 +144,13 @@ body{
     color: var(--blue);
     background-color: #fff;
 }
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
