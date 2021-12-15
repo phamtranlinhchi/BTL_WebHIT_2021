@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/lovetravel-thumbnail.jpg" sizes="32x32" />
+  <link rel="icon" href="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/lovetravel-thumbnail.jpg" sizes="192x192" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/packages.css">
+  <title>Packages</title>
+</head>
+<body>
+  <div class="container-package">
+    <div class="package__option" style="background: url('img/bg-package.jpg') center center / cover no-repeat;">
+      <div class="title-packages">
+        <p class="title-1 mb-20">OUR PACKAGES</p>
+        <p class="title-2">Search your 
+          <span class="holiday-text position-relative">Holiday</span> 
+        </p>
+      </div>
+      
+      <div class="box-transparent p-3">
+        <div class="form-option">
+          <div class="select-destination select-item">
+            <p class="title-select mb-20">
+              Select Your Destination :
+            </p>
+            <div class="form__select flex-center">
+              <select class="form-select-destiation" name="form-select-destiation" id="form-select-destiation">
+                <option value="0">All Destinations</option>
+                <option value="1">Europe</option>
+                <option value="2">  - Italy</option>
+                <option value="3">  - Netherlands</option>
+                <option value="4">Asia</option>
+                <option value="5">  - Thailandia</option>
+                <option value="5">United States</option>
+                <option value="5">Oceania</option>
+              </select>
+              <img src="img/icon-pin-grey.png" alt="">
+            </div>
+          </div>
+          <div class="select-date select-item">
+            <p class="title-select mb-20">
+              Select Your Date :
+            </p>
+            <div class="form__select flex-center">
+              <input type="text" class="datepicker" id="datepicker" placeholder="mm-dd-yyyy">
+              <img src="img/icon-calendar-grey.png" alt="">
+            </div>
+          </div>
+          <div class="select-price select-item">
+            <div class="d-flex justify-content-between">
+              <p class="title-select mb-2">
+                Max Price :
+              </p>
+              <p class="price-value">5000$</p>
+            </div>
+            <div class="progress-price">
+              <input  class="w-100 progress-value" type="range" min="0" max="10000" step="1">
+              <div class="progress-price-track"></div>
+            </div>
+            <div class="check-promotions flex-center">
+              <input type="checkbox" class="me-2">
+              <p>See only promotions</p>
+            </div>
+          </div>
+          <div class="btn-more-filter-box">
+            <button class="btn-more-filter flex-center br-30">
+              <img src="img/icon-filter-white.png" alt="filter-icon">
+              <p>MORE FILTERS</p>
+              <div class="box-transparent-filter">
+                <div class="filter-box">
+                  <div class="filter-list">
+                    <p class="title-filter">Typologies :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Relax
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Cultural
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Sport
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        History
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="filter-list">
+                    <p class="title-filter">Durations :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        1 - 3 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        3 - 6 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        6 - 9 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        9 - 12 Days
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="filter-list">
+                    <p class="title-filter">Difficulty :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        High
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Low
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Medium
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div class="filter-list">
+                    <p class="title-filter">Min Age :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        10 Years
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        18 Years
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        3 Years
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                
+              
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-left flex-center">
+          <div class="sort-price mr-30">PRICE
+
+            <i class="fas fa-angle-down"></i>
+            <div class="box-tranparent-sort">
+              <div class="sort-price-box">
+                <li class="sort-price-item text-uppercase sort-active">Lowest Price</li>
+                <li class="sort-price-item text-uppercase">Highest Price</li>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="sort-name">NAME
+            <i class="fas fa-angle-down"></i>
+            <div class="box-tranparent-sort">
+              <div class="sort-name-box">
+                <li class="sort-name-item text-uppercase sort-active">desc</li>
+                <li class="sort-name-item text-uppercase">asc</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-right flex-center">
+          <p class="sort-horizontal">
+            <i class="bi bi-list-ul mr-30 sort-btn-active"></i>
+          </p>
+          <p class="sort-vertical">
+            <i class="bi bi-grid-3x3-gap"></i>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="packages-cards flex-center">
+      
+    </div>
+  </div>
+
+  <div class="tabs-card">
+    
+  </div>
+
+  <script src="js/package-cards.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Datepicker -->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
