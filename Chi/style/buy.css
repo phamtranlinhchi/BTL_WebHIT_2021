@@ -56,3 +56,9 @@
     top: 10px;
     left: 10px;
 }
+/* RESPONSIVE */
+@media only screen and (max-width: 599px){
+    .buy, .leaf{
+        display: none;
+    }
+}

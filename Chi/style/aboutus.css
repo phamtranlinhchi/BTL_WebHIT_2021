@@ -14,7 +14,7 @@ a{
 .banner{
     background-image:
     linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(50, 56, 65, 0.3)),
-    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-06.jpg);
+    url(../images/aboutus-banner.jpeg);
     font-family: 'Poppins', sans-serif;
     background-position: center;
     background-size: cover;
@@ -28,13 +28,13 @@ a{
     font-size: 35px;
     position:absolute;
     bottom: 30px;
-    left: 120px;
+    left: 10%;
 }
 
 /* INTRODUCE */
 .intro{
     display: flex;
-    width: 80%;
+    width: 82%;
     letter-spacing: 1px;
     margin: 70px 0;
 }
@@ -70,13 +70,14 @@ a{
 
 /* VIDEO */
 .video{
+    width: 60%;
     margin-bottom: 50px;
 }
 
 /* STAFF */
 .banner-staff{
     background: linear-gradient(0,rgba(155, 143, 124, 0.3),rgba(37, 41, 48, 0.3)),
-    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg) no-repeat center/cover fixed;
+    url(../images/aboutus-banner-staff.jpeg) no-repeat center/cover fixed !important;
     width: 100%;
     height: 555px;
     position: relative;
@@ -279,7 +280,7 @@ u::after{
     width: 100%;
     height: 370px;
     background: linear-gradient(0,rgba(219, 203, 177, 0.3),rgba(94, 104, 121, 0.3)),
-    url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/p-10.jpg") no-repeat center/cover fixed;
+    url(../images/aboutus-status.jpeg) no-repeat center/cover fixed;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -300,7 +301,10 @@ u::after{
 
 
 /* RESPONSIVE */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1024px){
+    .banner{
+        background-position: center center;
+    }
     .intro{
         display: flex;
         flex-direction: column;
@@ -313,15 +317,23 @@ u::after{
         flex-direction: column;
         text-align: center;
     }
+    .video{
+        width: 90%;
+    }
     .banner-staff-text{
         left: 27%;
         width: 50%;
     }
     .staff{
-        display: none;
+        /* display: none; */
+        flex-direction: column;
+        align-items: center;        
+    }
+    .staff-info{
+        width: 90%;
     }
     .destinations{
-        margin-top: 20px;
+        margin-top: 2318px;
     }
     .des-container{
         display: flex;
@@ -332,15 +344,23 @@ u::after{
         width: 90%;
     }
     .status{
+        width: 60%;
         display: flex;
         flex-direction: column;
         height: auto;
         padding: 100px;
     }
-    .buy{
-        display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .des-header-2{
+        font-size: 25px;
     }
-    .leaf{
-        display: none;
+    .des-container-row-1{
+        font-size: 15px;
+    }
+    .des-container-row-2{
+        font-size: 15px;
     }
 }
+

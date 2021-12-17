@@ -14,7 +14,7 @@ a{
 /* BANNER */
 .banner{
     background: linear-gradient(0,rgba(67, 74, 84, 0.3),rgba(38, 42, 47, 0.3)),
-    url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-05.jpg);
+    url(../images/contact-banner.jpeg);
     background-position: center center;
     background-size: cover;
     width: 100%;
@@ -147,7 +147,10 @@ textarea{
 
 
 /* RESPONSIVE */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
+    .contact{
+        left: 12%;
+    }
     .container{
         width: 100%;
         display: flex;
@@ -168,5 +171,14 @@ textarea{
     }
     .detail-col{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .btn{
+        font-size: 10px;
+    }
+    .container-left, .container-right{
+        width: 90%;
     }
 }
