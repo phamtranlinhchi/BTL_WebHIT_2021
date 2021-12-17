@@ -7,14 +7,110 @@
   --text: #9a9a9a;
   --orange: #f3a46b;
 }
-.carousel button {
-  z-index: 1;
+
+
+/* ---------- CSS SLIDER ---------- */
+.slider_content {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
+.slider_content .title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+  transform: rotate(-2deg);
+  margin-bottom: 90px;
+}
+.slider_content .title_2 {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.fly {
+  transition: all 0.5s linear;
+  animation: flying 2s infinite alternate ease-in-out;
+}
+@keyframes flying {
+  0% {
+    transform: translateX(1%);
+  }
+}
+.slider_content .list {
+  margin-left: 40px;
+  height: 280px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.slider_content .list .list_item {
+  display: flex;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.list .list_item p {
+  letter-spacing: 2px;
+  margin-left: 16px;
+}
+.list .list_item i {
+  transform: translateY(5px);
+}
+.title span {
+  color: var(--orange);
+}
+.slider_content a {
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.slider_content a:hover {
+  background-color: #f09c3c;
+  color: #fff;
+  transition: all 0.5s;
+}
+.slider_content a p {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  background-color: rgb(85, 85, 85);
+  font-size: 14px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+/* ---------- CSS CONTENT ---------- */
 .content {
   margin: 60px 0;
 }
+
+
+/* ---------- CSS CONTENT_EXPERIENCE ---------- */
 .content .content_experience {
-  /* width: 80%; */
   width: 1200px;
   margin: 0 auto;
 }
@@ -40,6 +136,7 @@
 }
 .exp_left .title span {
   position: relative;
+  color: rgb(92, 92, 92);
 }
 .exp_left .title span::before {
   content: "";
@@ -128,7 +225,8 @@
   background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
 }
 
-/* ------------CSS SERVICES------------ */
+
+/* ---------- CSS SERVICES ---------- */
 .content_services {
   width: 100%;
   background-color: #555555;
@@ -154,6 +252,7 @@
 .services_inside .title span {
   position: relative;
   z-index: 100;
+  color: #fff;
 }
 .services_inside .title span::before {
   content: "";
@@ -209,7 +308,9 @@
 .services_item .item_right .view6 {
   background-color: #ff6868;
 }
-/* ------------CSS CONTENT SALE------------ */
+
+
+/* ------------CSS CONTENT_SALE------------ */
 .content_sale {
   /* width: 80%; */
   width: 1200px;
@@ -279,10 +380,6 @@
   width: 33%;
   border: 1px solid rgb(233, 233, 233);
   border-radius: 5px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
 }
 .content_sale .sale_cen .father_item,
 .content_sale .sale_right .father_item {
@@ -383,7 +480,18 @@
   background-color: #f76570;
 }
 
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 1301px) {
+  .slider_content .title {
+    display: none;
+  }
+  .slider_content a {
+    display: none;
+  }
+  .slider_content .list {
+    transform: translateY(-20%);
+  }
   .content_experience .exp_walk .exp_left {
     width: 100%;
   }
@@ -446,6 +554,9 @@
     height: 50px;
   }
 }
-@media (max-width: 940px) {
 
+@media (max-width: 940px) {
+  .slider_content .list {
+    display: none;
+  }
 }
