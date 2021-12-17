@@ -209,12 +209,12 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 
-u{
+.des-header-2 > u{
     z-index: 99;
     text-decoration: none;
     position: relative;
 }
-u::after{
+.des-header-2 > u::after{
     background-color: #f3a46b;
     position: absolute;
     content: '';
