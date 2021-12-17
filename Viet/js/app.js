@@ -514,7 +514,7 @@ const app = {
         const tabCard = tabCardItems[index]
         $1('.container-package').classList.add('d-none')
         tabCard.classList.add('active-tab')
-        // $1('.tab-card-item.active-tab').classList.remove('active-tab')
+        $1('.tab-card-item.active-tab').classList.remove('active-tab')
       }
     })
 
