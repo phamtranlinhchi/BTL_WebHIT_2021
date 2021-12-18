@@ -86,7 +86,6 @@ select, input {
   background: transparent;
   color: #a3a3a3;
 }
-
 .active-tab {
   display: block !important;
 }

@@ -1,5 +1,3 @@
-@import "./base.css";
-
 .container1 {
   color: var(--text);
 }
@@ -7,8 +5,9 @@
   --text: #9a9a9a;
   --orange: #f3a46b;
 }
-
-
+.header_content .links{
+  transform: translateY(8px);
+}
 /* ---------- CSS SLIDER ---------- */
 .slider_content {
   position: absolute;
@@ -41,8 +40,8 @@
   animation: flying 2s infinite alternate ease-in-out;
 }
 @keyframes flying {
-  0% {
-    transform: translateX(1%);
+  100% {
+    transform: translateX(-1%);
   }
 }
 .slider_content .list {
@@ -100,20 +99,39 @@
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-
 }
 
 /* ---------- CSS CONTENT ---------- */
 .content {
+  /* margin: 110px 0 60px 0; */
   margin: 60px 0;
 }
 
-
 /* ---------- CSS CONTENT_EXPERIENCE ---------- */
-.content .content_experience {
+
+/* @keyframes smoothScroll {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+.content_experience {
   width: 1200px;
   margin: 0 auto;
+  /* transform: translateY(-50px);
+  visibility: hidden;
+  transform: translateY(200px);
+  transition: 1.5s; */
 }
+/* .content_experience_scroll {
+  animation: smoothScroll 1s forwards;
+  transform: translateX(200px) !important;
+  visibility: visible;
+  transform: translateY(-50px);
+  transition: 1.5s;
+} */
 .content_experience .exp_walk {
   display: flex;
   justify-content: space-between;
@@ -225,7 +243,6 @@
   background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
 }
 
-
 /* ---------- CSS SERVICES ---------- */
 .content_services {
   width: 100%;
@@ -309,7 +326,6 @@
   background-color: #ff6868;
 }
 
-
 /* ------------CSS CONTENT_SALE------------ */
 .content_sale {
   /* width: 80%; */
@@ -353,8 +369,11 @@
   align-items: center;
 }
 .sale_left_cnt .cnt_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 50%;
-  text-align: center;
 }
 .sale_left_cnt .cnt_item .num {
   font-size: 36px;
@@ -479,8 +498,9 @@
 .sale_content .sale_more .details1 {
   background-color: #f76570;
 }
-
-
+.footer .footer_footer p {
+  transform: translateY(30%);
+}
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1301px) {
   .slider_content .title {

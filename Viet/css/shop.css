@@ -20,7 +20,9 @@ html {
   letter-spacing: 1px;
   color: #555555;
 }
-
+.header_content .links{
+  transform: translateY(8px);
+}
 .shop-section {
   padding-top: 21%;
   position: relative;

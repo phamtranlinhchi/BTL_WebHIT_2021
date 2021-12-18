@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --text: #9a9a9a;
@@ -14,15 +14,16 @@
   width: 100%;
   margin: 0 auto;
 }
-.container1 a {
-  text-decoration: none;
-}
 
-ul {
-  margin: 0 !important;
-  padding: 0;
+.active ~ label {
+  display: none !important;
 }
-
+a {
+  text-decoration: none !important;
+}
+.trend p {
+  margin-bottom: 0;
+}
 /* --------- CSS HEADER START --------- */
 
 .header_nav {
@@ -39,7 +40,7 @@ ul {
   justify-content: space-between;
   z-index: 100;
 }
-.header_content .links{
+.header_content .links {
   display: flex;
   width: 60%;
   align-items: center;
@@ -49,11 +50,11 @@ ul {
 .header_content .logo {
   width: 170px;
 }
-.header_content .links li{
+.header_content .links li {
   list-style: none;
 }
 .header_content .links li a,
-.header_content .links li label{
+.header_content .links li label {
   color: var(--text);
   font-size: 18px;
   font-weight: 500;
@@ -61,10 +62,10 @@ ul {
   border-radius: 5px;
   line-height: 80px;
 }
-.header_content .links li label{
+.header_content .links li label {
   display: none;
 }
-.header_nav .menu-icon{
+.header_nav .menu-icon {
   color: var(--text);
   font-size: 18px;
   cursor: pointer;
@@ -73,7 +74,7 @@ ul {
   text-align: center;
   display: none;
 }
-.header_nav input[type="checkbox"]{
+.header_nav input[type="checkbox"] {
   display: none;
 }
 .header_content .links .sub_nav {
@@ -89,10 +90,10 @@ ul {
   box-shadow: 0 0 10px rgb(228, 228, 228);
   border-radius: 4px;
 }
-.header_content .links ul li a{
+.header_content .links ul li a {
   display: block;
   line-height: 30px;
-  border-radius: 0px!important;
+  border-radius: 0px !important;
 }
 .links li .sub_nav .trend {
   display: flex;
@@ -113,7 +114,7 @@ ul {
   letter-spacing: 2px;
   margin-left: 20px;
   margin-right: 10px;
-  transform: translateY(10px);
+  /* transform: translateY(10px); */
 }
 .header_content .links .sub_nav .sub_subnav {
   width: 100%;
@@ -123,7 +124,7 @@ ul {
   left: 105%;
 }
 
-.header_content .links ul li{
+.header_content .links ul li {
   position: relative;
 }
 .header_content .booknow {
@@ -158,19 +159,20 @@ ul {
 }
 .header_content .links .sub_nav li:hover {
   background-color: #dddddd;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.header_content .links li:hover .sub_nav{
+.header_content .links li:hover .sub_nav {
   visibility: visible;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .header_content .links .hover_sub2:hover .sub_subnav {
   visibility: visible;
 }
-
+/* .nav-item:hover {
+  color: var(--orange) !important;
+} */
 
 /* --------- CSS HEADER END --------- */
-
 
 /* ---------- CSS FOOTER START ---------- */
 
@@ -258,7 +260,7 @@ ul {
 }
 .footer .footer_footer p {
   color: #fff;
-  transform: translateY(30%);
+  /* transform: translateY(30%); */
 }
 .nav_overlay {
   position: fixed;
@@ -276,19 +278,22 @@ ul {
   width: 3px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(100, 100, 100); 
+  background: rgb(100, 100, 100);
   border-radius: 10px;
 }
 
 /* Responsive code start */
-@media screen and (max-width: 1301px){
+@media screen and (max-width: 1301px) {
+  .header {
+    width: 100%;
+  }
   .header_nav {
     width: 90%;
   }
   .header_content .logo {
     width: 120px;
   }
-  .header_content .links li a{
+  .header_content .links li a {
     margin: 0;
     font-size: 13px;
     padding: 0 9px;
@@ -312,14 +317,14 @@ ul {
     width: 90%;
   }
 }
-@media screen and (max-width: 940px){
-  .header_nav .menu-icon{
+@media screen and (max-width: 940px) {
+  .header_nav .menu-icon {
     display: block;
   }
-  .header_nav #show-menu:checked ~ .menu-icon i::before{
+  .header_nav #show-menu:checked ~ .menu-icon i::before {
     content: "\f00d";
   }
-  .header_content .links{
+  .header_content .links {
     display: block;
     position: fixed;
     background: #ffffff;
@@ -331,7 +336,7 @@ ul {
     padding: 0 0 50px 0;
     transition: all 0.3s ease-in-out;
   }
-  .header_content #show-menu:checked ~ .links{
+  .header_content #show-menu:checked ~ .links {
     left: 0%;
     width: 50%;
     transition: all 0.5s ease-in-out;
@@ -339,11 +344,11 @@ ul {
   .header_content #show-menu:checked ~ .nav_overlay {
     display: block;
   }
-  .header_content .links .sub_nav li{
+  .header_content .links .sub_nav li {
     border-bottom: 0;
   }
   .header_content .links li a,
-  .header_content .links li label{
+  .header_content .links li label {
     line-height: 40px;
     font-size: 20px;
     display: block;
@@ -353,15 +358,15 @@ ul {
   .header_content .links li .res_hv2 {
     font-size: 18px;
   }
-  .header_content .links li a.desktop-link{
+  .header_content .links li a.desktop-link {
     display: none;
   }
   .header_content .links .sub_nav li:hover {
     background-color: #ffffff00;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .header_content .links li:hover .sub_nav .sub_subnav {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .header_content .links .sub_nav {
     border: 0;
@@ -393,16 +398,20 @@ ul {
   .header_content .links #show-contact:checked ~ ul {
     max-height: 100vh;
     width: 100%;
+    transition: 0.5s;
   }
-  .header_content .links ul li{
+  ul {
+    transition: 0.5s;
+  }
+  .header_content .links ul li {
     margin: 7px 20px;
   }
-  .header_content .links .sub_nav li a{
+  .header_content .links .sub_nav li a {
     font-size: 18px;
     line-height: 30px;
-    border-radius: 5px!important;
+    border-radius: 5px !important;
   }
-  .sub_subnav li a{
+  .sub_subnav li a {
     font-size: 18px !important;
   }
   .links .sub_nav .sub1 {
