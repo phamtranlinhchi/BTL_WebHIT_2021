@@ -18,6 +18,11 @@
   text-decoration: none;
 }
 
+ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
 /* --------- CSS HEADER START --------- */
 
 .header_nav {
@@ -39,7 +44,7 @@
   width: 60%;
   align-items: center;
   justify-content: space-between;
-  transform: translateY(8px);
+  /* transform: translateY(8px); */
 }
 .header_content .logo {
   width: 170px;
