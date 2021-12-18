@@ -15,6 +15,10 @@ body{
     align-items: center;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 /* BANNER */
 .banner{
     width: 100%;

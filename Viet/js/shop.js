@@ -19,7 +19,10 @@ const shop = {
     containerCards.innerHTML = shop.html`
       ${this.cards.map((card, index) => {
         return shop.html`
-          <div class="card-item">
+          <div class="card-item col-xl-3 col-lg-3 col-md-6 col-12">
+            ${card.sale && shop.html`
+              <div class="sale">sale</div>
+            `}
             <div class="img-card">
               <img class="img-fluid" src="${card.img}" alt="">
             </div>
@@ -29,13 +32,19 @@ const shop = {
                 <p>☆</p><p>☆</p><p>☆</p><p>☆</p><p>☆</p>
               </div>
               <div class="price d-flex">
-                <p class="price-old">
-                  ${card.priceOld}
-                </p>
-                <span class="ps-1 pe-1">-</span>
-                <p class="current-price">
-                  ${card.currentPrice}
-                </p>
+                ${card.priceOld && shop.html`            
+                  <p class="price-old"><del>${card.priceOld}</del></p>
+                  <span class="ps-1 pe-1">-</span>
+                  <p class="current-price">
+                    ${card.currentPrice}
+                  </p>
+                `}
+                ${!card.priceOld && shop.html`
+                  <p class="current-price">
+                    ${card.currentPrice}
+                  </p>
+                `}
+                
               </div>
               <button class="btn-chose">${card.btnText}</button>
             </div>
