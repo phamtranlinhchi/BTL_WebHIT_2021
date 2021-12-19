@@ -205,7 +205,7 @@ a {
 }
 .footer_content .left img {
   height: 35px !important;
-  width: 150px;
+  width: 150px !important;
   margin-bottom: 30px;
 }
 .footer_content .left .text_footer {
