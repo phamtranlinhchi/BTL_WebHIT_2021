@@ -20,7 +20,7 @@ html {
   letter-spacing: 1px;
   color: #555555;
 }
-.header_content .links{
+.header_content .links {
   transform: translateY(8px);
 }
 .shop-section {
@@ -187,5 +187,10 @@ html {
     width: 100%;
     padding: 0 68px;
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 940px) {
+  .header_content .links {
+    transform: translateY(0);
   }
 }

@@ -5,11 +5,8 @@
   --text: #9a9a9a;
   --orange: #f3a46b;
 }
-.header_content .links{
-  transform: translateY(8px);
-}
 .header_content .links {
-  margin-top: 0;
+  transform: translateY(8px);
 }
 /* ---------- CSS SLIDER ---------- */
 .slider_content {
@@ -581,5 +578,8 @@
 @media (max-width: 940px) {
   .slider_content .list {
     display: none;
+  }
+  .header_content .links {
+    transform: translateY(0);
   }
 }
