@@ -8,6 +8,9 @@
 .header_content .links{
   transform: translateY(8px);
 }
+.header_content .links {
+  margin-top: 0;
+}
 /* ---------- CSS SLIDER ---------- */
 .slider_content {
   position: absolute;

@@ -112,9 +112,7 @@ a {
   color: #fff;
   font-size: 15px;
   letter-spacing: 2px;
-  margin-left: 20px;
   margin-right: 10px;
-  /* transform: translateY(10px); */
 }
 .header_content .links .sub_nav .sub_subnav {
   width: 100%;
@@ -206,7 +204,8 @@ a {
   width: 15%;
 }
 .footer_content .left img {
-  height: 35px;
+  height: 35px !important;
+  width: 150px;
   margin-bottom: 30px;
 }
 .footer_content .left .text_footer {
@@ -260,7 +259,6 @@ a {
 }
 .footer .footer_footer p {
   color: #fff;
-  /* transform: translateY(30%); */
 }
 .nav_overlay {
   position: fixed;
@@ -329,7 +327,7 @@ a {
     position: fixed;
     background: #ffffff;
     height: 100%;
-    top: -7px;
+    top: 0;
     left: -100%;
     margin-left: 0;
     overflow-y: auto;

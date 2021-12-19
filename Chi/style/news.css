@@ -58,11 +58,10 @@ a {
 .container-section{
     box-sizing: border-box;
     width: 570px;
-    height: 325px;
+    /* height: 325px; */
     margin: 15px;
     display: flex;
     border: 1px solid #f1f1f1;
-
 }
 .container-section-img, .container-section-text{
     width: 50%;
