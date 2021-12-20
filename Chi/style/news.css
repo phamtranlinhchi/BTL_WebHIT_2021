@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.header{
+    font-family: "Poppins", sans-serif;
+}
 :root{
     --green: #1bbc9c;
     --purple: #ba71da;
