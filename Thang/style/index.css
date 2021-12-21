@@ -310,12 +310,11 @@
 /* ------------CSS CONTENT_SALE------------ */
 .content_sale {
   width: 1200px;
-  margin: 0 auto;
+  margin: 120px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto;
-  margin-top: 120px;
   flex-wrap: wrap;
 }
 .content_sale .sale_left {
