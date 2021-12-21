@@ -26,7 +26,6 @@
   display: inline-block;
   background-color: rgb(85, 85, 85);
   color: #fff;
-  transform: rotate(-2deg);
   margin-bottom: 90px;
 }
 .slider_content .title_2 {
@@ -40,8 +39,11 @@
   animation: flying 2s infinite alternate ease-in-out;
 }
 @keyframes flying {
+  0% {
+    transform: rotate(-1deg);
+  }
   100% {
-    transform: translateX(-1%);
+    transform: rotate(1deg);
   }
 }
 .slider_content .list {
@@ -103,35 +105,15 @@
 
 /* ---------- CSS CONTENT ---------- */
 .content {
-  /* margin: 110px 0 60px 0; */
   margin: 60px 0;
 }
 
 /* ---------- CSS CONTENT_EXPERIENCE ---------- */
 
-/* @keyframes smoothScroll {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
 .content_experience {
   width: 1200px;
   margin: 0 auto;
-  /* transform: translateY(-50px);
-  visibility: hidden;
-  transform: translateY(200px);
-  transition: 1.5s; */
 }
-/* .content_experience_scroll {
-  animation: smoothScroll 1s forwards;
-  transform: translateX(200px) !important;
-  visibility: visible;
-  transform: translateY(-50px);
-  transition: 1.5s;
-} */
 .content_experience .exp_walk {
   display: flex;
   justify-content: space-between;
@@ -251,7 +233,6 @@
   color: #fff;
 }
 .services_inside {
-  /* width: 80%; */
   width: 1200px;
   margin: 0 auto;
 }
@@ -328,7 +309,6 @@
 
 /* ------------CSS CONTENT_SALE------------ */
 .content_sale {
-  /* width: 80%; */
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -431,7 +411,6 @@
 }
 .sale_content .sale_title {
   border-bottom: 1px solid rgb(233, 233, 233);
-  /* margin-bottom: 10px; */
 }
 .sale_content .sale_title h4 {
   font-size: 20px;
@@ -567,11 +546,11 @@
     margin-bottom: 80px;
   }
   .sale_abs {
-    padding: 20px;
+    padding: 15px;
   }
   .sale_abs img {
-    width: 52px;
-    height: 50px;
+    width: 42px;
+    height: 40px;
   }
 }
 
@@ -581,5 +560,17 @@
   }
   .header_content .links {
     transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .item .price {
+    font-size: 14px;
+  }
+  .sale_abs {
+    padding: 12px;
+  }
+  .sale_abs img {
+    width: 25px;
+    height: 25px;
   }
 }

@@ -14,10 +14,6 @@
   width: 100%;
   margin: 0 auto;
 }
-
-.active ~ label {
-  display: none !important;
-}
 a {
   text-decoration: none !important;
 }
@@ -25,7 +21,29 @@ a {
   margin-bottom: 0;
 }
 /* --------- CSS HEADER START --------- */
-
+.header {
+  width: 100%;
+}
+.header-fix {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(167, 167, 167);
+  animation: smoothScroll 1s forwards;
+}
+@media screen and (min-width: 940px) {
+  @keyframes smoothScroll {
+    0% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
 .header_nav {
   width: 1200px;
   margin: 0 auto;
@@ -45,7 +63,7 @@ a {
   width: 60%;
   align-items: center;
   justify-content: space-between;
-  /* transform: translateY(8px); */
+  z-index: 1000;
 }
 .header_content .logo {
   width: 170px;
@@ -100,7 +118,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
 }
 .sub_nav .desktop-link i {
   position: absolute;
@@ -108,10 +125,10 @@ a {
   top: 17px;
 }
 .links .sub_nav .sub1 {
-  padding: 0px 8px;
+  padding: 2px 8px;
   background-color: rgb(255, 96, 96);
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 2px;
   margin-right: 10px;
 }
@@ -135,15 +152,16 @@ a {
   text-decoration: none;
   color: #fff;
 }
-.active {
+.active1 {
   color: var(--orange) !important;
 }
+
 /* Dropdown Menu code start */
 .header_content .links .sub_nav {
   position: absolute;
   top: 70px;
   padding: 0;
-  transform: translatex(-15px);
+  transform: translateX(-15px);
   visibility: hidden;
 }
 .header_content .links .sub_nav li {
@@ -167,10 +185,6 @@ a {
 .header_content .links .hover_sub2:hover .sub_subnav {
   visibility: visible;
 }
-/* .nav-item:hover {
-  color: var(--orange) !important;
-} */
-
 /* --------- CSS HEADER END --------- */
 
 /* ---------- CSS FOOTER START ---------- */
@@ -283,9 +297,6 @@ a {
 
 /* Responsive code start */
 @media screen and (max-width: 1301px) {
-  .header {
-    width: 100%;
-  }
   .header_nav {
     width: 90%;
   }
@@ -317,6 +328,26 @@ a {
   }
 }
 @media screen and (max-width: 940px) {
+  .active1 {
+    display: none !important;
+  }
+  .active1 ~ label {
+    color: var(--orange) !important;
+  }
+  .home-active {
+    display: block !important;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    transition: 0.1s;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(167, 167, 167);
+  }
   .header_nav .menu-icon {
     display: block;
   }
@@ -329,6 +360,7 @@ a {
     background: #ffffff;
     height: 100%;
     top: 0;
+    bottom: 0;
     left: -100%;
     margin-left: 0;
     overflow-y: auto;
@@ -338,6 +370,7 @@ a {
   .header_content #show-menu:checked ~ .links {
     left: 0%;
     width: 50%;
+    height: 100%;
     transition: all 0.5s ease-in-out;
   }
   .header_content #show-menu:checked ~ .nav_overlay {
@@ -357,7 +390,7 @@ a {
   .header_content .links li .res_hv2 {
     font-size: 18px;
   }
-  .header_content .links li a.desktop-link {
+  .header_content .links li .desktop-link {
     display: none;
   }
   .header_content .links .sub_nav li:hover {
@@ -407,11 +440,14 @@ a {
   }
   .header_content .links .sub_nav li a {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 22px;
     border-radius: 5px !important;
   }
   .sub_subnav li a {
     font-size: 18px !important;
+  }
+  .header_content .links .hover_sub2 label {
+    line-height: 22px;
   }
   .links .sub_nav .sub1 {
     margin-right: 0;
@@ -437,23 +473,32 @@ a {
   }
   .header_content .links .sub_nav li {
     margin: 0 0 0 10px;
+    padding: 0 20px;
   }
   .header_content .links .sub_nav li a {
     font-size: 12px !important;
-    line-height: 10px;
   }
   .links .sub_nav .sub1 {
     font-size: 10px;
-    padding: 3px 5px;
+    padding: 5px !important;
     margin-right: 0;
+    line-height: 10px;
   }
   .header_content .links .hover_sub2 label {
     font-size: 12px !important;
-    transform: translateY(-5px);
   }
   .links .sub_nav .sub_subnav li {
-    padding: 5px;
     margin: 0 !important;
     line-height: 10px;
+  }
+  .links .sub_nav .sub_subnav li a {
+    padding-left: 10px;
+  }
+  .footer_footer {
+    padding: 10px !important;
+  }
+  .footer_footer .text_left,
+  .footer_footer .text_right {
+    font-size: 14px;
   }
 }

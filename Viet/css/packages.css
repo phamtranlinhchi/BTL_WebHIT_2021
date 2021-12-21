@@ -97,7 +97,7 @@ select, input {
 .package__option {
   position: relative;
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   padding: 200px 159.4px 30px 159.6px;
 }
 
@@ -293,6 +293,7 @@ select, input {
   justify-content: space-between;
   padding: 35px;
   position: relative;
+  width: 100%;
 }
 
 .form__select {
@@ -1135,7 +1136,7 @@ textarea[type="message"] {
 }
 
 .img-gallery {
-  height: 505px;
+  height: 417px;
   overflow: hidden;
 }
 
